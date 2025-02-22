@@ -24,11 +24,11 @@ services:
     # Из какого Dockerfile собирать образ для этого контейнера:
     build: ./backend/
     env_file: .env
+    volumes:
+      - static:/backend_static
     # Какие контейнеры нужно запустить до старта этого контейнера:
     depends_on:
       - db
-    volumes:
-      - static:/backend_static
   # Имя третьего контейнера. Это контейнер с фронтендом
   frontend:
     env_file: .env
