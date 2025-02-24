@@ -36,7 +36,7 @@ services:
     build: ./frontend/
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      -staic:/./frontend_static/
+      -staic:/frontend_static/
 
   gateway:
     # Сбилдить и запустить образ, 
