@@ -10,7 +10,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ded.zapto.org','158.160.6.84']
 
-
 # Application definition
 
 INSTALLED_APPS = [
